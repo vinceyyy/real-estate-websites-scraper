@@ -1,6 +1,5 @@
 import sqlite3
 
-
 class DataRow:
     """One row of dict data: {"name": name, "address": address, "area": area, "type": typ,
                     "units": units, "year": year, "developer": dev, "agency": agency}

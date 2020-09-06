@@ -1,11 +1,6 @@
 from sqlite import DataRow
 from webpage import WebDrive, WebPage
-import requests
-from bs4 import BeautifulSoup as bs
-import time
 import re
-import random
-import pprint
 
 # global var
 url = "https://www.buzzbuzzhome.com/us/place/new-york-ny"

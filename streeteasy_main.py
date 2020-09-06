@@ -1,15 +1,9 @@
 from sqlite import DataRow
 from webpage import WebDrive, WebPage
-import requests
-from bs4 import BeautifulSoup as bs
-import time
 import re
-import random
 
 
 # global var
-# area = "brooklyn"
-# url = f"https://streeteasy.com/buildings/{area}/new_development:new%20development?refined_search=true"
 url = "https://streeteasy.com/buildings/nyc/new_development:new%20development%7Carea:100,300,400,200"
 headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1 Safari/605.1.15"

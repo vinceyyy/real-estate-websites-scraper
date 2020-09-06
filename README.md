@@ -1,10 +1,8 @@
 # Real Estate Listings Website Scraper
 
-A scraper for streeteasy.com, buzzbuzzhome.com~~, and cityrealty.com~~.
+A scraper for scraping developments's information from streeteasy.com and buzzbuzzhome.com ~~and cityrealty.com~~. By default the collected developments' info includes name, adress, units, year, area, developer, type and the marketing agency.
 
-This is my first Object Oriented Programming project. 
-
-The first part, streeteasy.com scraper, was originally written as Process Oriented Program. After it was done and tested, I realized that I have to write similar code for the other two website, therefore I decided to rewrite the whole project using OOP.
+(This is my first Object Oriented Programming project. The first part, streeteasy.com scraper, was originally written as Process Oriented Program. After it was done and tested, I realized that I have to write similar code for every website, therefore I decided to rewrite the whole project using OOP.)
 
 ## Dependency
 ### undetected-chromedriver
@@ -26,6 +24,7 @@ The first part, streeteasy.com scraper, was originally written as Process Orient
 
 ### sqlite.py
 * Receive dict data and write them into sqlite.
+* Do what you want with this part. I was trying to practice my SQL skill.
 * From: {"name": name, "address": address, "area": area, "type": typ,
                     "units": units, "year": year, "developer": dev, "agency": agency} 
 * To: 
@@ -44,3 +43,12 @@ The first part, streeteasy.com scraper, was originally written as Process Orient
                 FOREIGN KEY (type_id) REFERENCES Type(id),
                 FOREIGN KEY (agency_id) REFERENCES Agency(id)
 
+## How to use
+1. Change the urls in two main.py files to the urls you want to scrape from.
+2. Run it.
+3. For buzzbuzzhome.com:
+  * Done.
+4. For Streeteasy.com:
+  1. Make thru the nightmare CAPTCHA.
+  2. Wait for it running until get busted by CAPTCHA.
+  3. Make thru the nightmare CAPTCHA aging.
